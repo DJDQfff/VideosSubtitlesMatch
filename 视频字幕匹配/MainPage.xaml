@@ -1,0 +1,62 @@
+﻿<Page x:Class="SubtitlesMatch.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="Button"
+               x:Key="buttonstyle">
+            <Setter Property="Margin" 
+                    Value="8" />
+        </Style>
+    </Page.Resources>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Stretch" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="PickSubtitlesButton"
+                x:Uid="PickSubtitlesButton"
+                HorizontalAlignment="Stretch"
+                Click="PickSubtitlesButton_Click"
+                Style="{StaticResource buttonstyle}"
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalAlignment="Top" />
+        <Button x:Name="PickTargetVideosButton"
+                x:Uid="PickTargetVideosButton"
+                HorizontalAlignment="Stretch"
+                Click="PickTargetVideosButton_Click"
+                Style="{StaticResource buttonstyle}"
+                Grid.Row="0"
+                Grid.Column="1"
+                VerticalAlignment="Top" />
+        <Button x:Name="StartTransformButton"
+                Click="StartTransformButton_Click"
+                x:Uid="StartTransformButton"
+                HorizontalAlignment="stretch"
+                Style="{StaticResource buttonstyle}"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                VerticalAlignment="Top" />
+
+        <ScrollViewer Grid.Column="0"
+                      Grid.Row="2"
+                       VerticalScrollMode="Auto"
+                      VerticalScrollBarVisibility="Auto"
+                      Margin="8"
+                      Grid.ColumnSpan="2">
+            <TextBlock x:Name="ShowInfomationTextBlock"
+                       x:Uid="ShowInfomationTextBlock"
+                       Margin="8"
+                       TextWrapping="Wrap" />
+        </ScrollViewer>
+    </Grid>
+</Page>
