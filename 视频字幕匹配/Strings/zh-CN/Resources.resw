@@ -148,10 +148,10 @@
     <value>个）：</value>
   </data>
   <data name="PickSubtitlesButton.Content" xml:space="preserve">
-    <value>选择字幕文件夹</value>
+    <value>选择字幕文件</value>
   </data>
   <data name="PickTargetVideosButton.Content" xml:space="preserve">
-    <value>选择视频文件夹</value>
+    <value>选择视频文件</value>
   </data>
   <data name="ShowInfomationTextBlock.Text" xml:space="preserve">
     <value>欢迎使用！	本软件用于匹配字幕和视频文件名

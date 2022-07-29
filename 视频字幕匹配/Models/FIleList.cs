@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 using Windows.Storage;
 
-using SubtitlesMatch.ContentDialogPage;
+using VideosSubtitlesMatch.ContentDialogPage;
 
-namespace SubtitlesMatch.Models
+namespace VideosSubtitlesMatch.Models
 {
     internal class FIleList
     {

@@ -2,7 +2,7 @@
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“内容对话框”项模板
 
-namespace SubtitlesMatch.ContentDialogPage
+namespace VideosSubtitlesMatch.ContentDialogPage
 {
     public sealed partial class CountNotMatch : ContentDialog
     {
