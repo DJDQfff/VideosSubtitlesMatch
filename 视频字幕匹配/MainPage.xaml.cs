@@ -39,6 +39,7 @@ namespace VideosSubtitlesMatch
                 string str1 = resourceLoader.GetString("part_11");
                 string str2 = resourceLoader.GetString("part_12");
 
+
                 ShowInfomationTextBlock.Text += $"\n" + str1 + files.Count + str2 + "\n";
                 foreach (var file in files)
                 {
