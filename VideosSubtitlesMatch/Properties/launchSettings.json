@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VideosSubtitlesMatch (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VideosSubtitlesMatch (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

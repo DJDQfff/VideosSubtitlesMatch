@@ -1,0 +1,56 @@
+<Page
+    x:Class="VideosSubtitlesMatch.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:VideosSubtitlesMatch"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel
+            x:Name="RootStackPanel"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Orientation="Vertical">
+            <StackPanel Width="300" Orientation="Vertical">
+                <Button
+                    x:Name="PickSubtitlesButton"
+                    x:Uid="PickSubtitlesButton"
+                    Click="PickSubtitlesButton_Click" />
+                <Button
+                    x:Name="PickTargetVideosButton"
+                    x:Uid="PickTargetVideosButton"
+                    Click="PickTargetVideosButton_Click" />
+                <Button
+                    x:Name="StartTransformButton"
+                    x:Uid="StartTransformButton"
+                    Click="StartTransformButton_Click" />
+            </StackPanel>
+
+            <ScrollViewer
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                VerticalScrollBarVisibility="Auto"
+                VerticalScrollMode="Auto">
+                <TextBlock
+                    x:Name="ShowInfomationTextBlock"
+                    x:Uid="ShowInfomationTextBlock"
+                    TextWrapping="Wrap" />
+            </ScrollViewer>
+        </StackPanel>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="RootStackPanel.Orientation" Value="Horizontal" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</Page>
